@@ -1,0 +1,79 @@
+#+title: Contributing
+
+* Contributing to Text Browser
+
+Thank you for considering contributing to Text Browser!
+
+** How to Contribute
+
+1. Fork the repository
+2. Create a new branch for your feature
+3. Make your changes
+4. Run tests
+5. Submit a pull request
+
+** Development Setup
+
+*** Requirements
+- Zig 0.13.0 or later
+- SDL2
+- SDL2_ttf
+
+*** Installation
+#+begin_src bash
+# Clone your fork
+git clone https://github.com/yourusername/text-browser
+cd text-browser
+
+# Build the project
+zig build
+#+end_src
+
+** Coding Style
+
+- Keep the code minimal and clean
+- Follow existing code formatting
+- Add comments for complex logic
+- Write tests for new features
+
+** Pull Request Process
+
+*** Before Submitting
+- Update documentation
+- Update the README if needed
+- Add tests for new features
+- Ensure all tests pass
+
+*** Submission Guidelines
+1. Create a descriptive pull request title
+2. Explain your changes in the PR description
+3. Reference any related issues
+4. Wait for review and address feedback
+
+** Development Guidelines
+
+*** Code Organization
+- Keep files focused and single-purpose
+- Follow the existing project structure
+- Use meaningful names for functions and variables
+
+*** Testing
+- Write tests for new functionality
+- Ensure existing tests pass
+- Test edge cases
+- Document test cases
+
+** Questions?
+
+Feel free to open an issue for any questions or concerns.
+
+** Communication
+
+- Use issues for bug reports and feature requests
+- Be respectful and constructive in discussions
+- Follow the code of conduct
+
+** Additional Resources
+
+- [[https://ziglang.org/documentation/master/][Zig Documentation]]
+- [[https://wiki.libsdl.org/][SDL2 Documentation]]

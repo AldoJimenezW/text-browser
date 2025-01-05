@@ -1,0 +1,56 @@
+#+title: Readme
+
+* Text Browser
+A minimalist, productivity-focused web browser built with Zig.
+
+** Overview
+Text Browser is a GUI web browser that emphasizes text content, focusing on readability and distraction-free browsing. It aims to provide a clean, minimal interface while maintaining compatibility with modern web standards.
+
+** Features
+- Minimalist GUI interface
+- Text-focused content display
+- E-ink mode for better readability
+- Workspace management
+- Extension system
+- Distraction-free browsing experience
+
+** Design Philosophy
+- Minimalism: Focus on essential content
+- Productivity: Efficient navigation and workspace management
+- Readability: Clean text rendering and customizable display
+- Extensibility: Community-driven enhancement through extensions
+
+** Building from Source
+*** Requirements
+- Zig 0.13.0 or later
+- SDL2
+- SDL2_ttf
+
+*** For Arch Linux
+#+begin_src bash
+# Install dependencies
+paru -S sdl2 sdl2_ttf
+#+end_src
+
+*** Building
+#+begin_src bash
+git clone https://github.com/yourusername/text-browser
+cd text-browser
+zig build
+#+end_src
+
+** Contributing
+Contributions are welcome! Please feel free to submit Pull Requests.
+
+Before contributing, please:
+- Check existing issues and PRs
+- Test your changes
+- Follow the existing code style
+- Add tests for new functionality
+- Update documentation as needed
+
+** License
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+
+** Project Status
+Currently in active development. Basic features are being implemented.

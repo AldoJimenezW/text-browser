@@ -1,9 +1,11 @@
+// Import modules
 const std = @import("std");
 const c = @cImport({
     @cInclude("SDL2/SDL.h");
     @cInclude("SDL2/SDL_ttf.h");
 });
 
+// Text rendering
 pub const TextRenderer = struct {
     font: *c.TTF_Font,
     renderer: *c.SDL_Renderer,
@@ -13,6 +15,7 @@ pub const TextRenderer = struct {
             return error.TTFInitFailed;
         }
 
+        // Setting Font
         const font = c.TTF_OpenFont("/usr/share/fonts/TTF/DejaVuSansMono.ttf", font_size) orelse {
             const err = c.TTF_GetError();
             const stderr = std.io.getStdErr().writer();

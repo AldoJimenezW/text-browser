@@ -1,10 +1,14 @@
+// Import modules
 const std = @import("std");
 const c = @cImport({
     @cInclude("SDL2/SDL.h");
     @cInclude("SDL2/SDL_ttf.h");
 });
+
+// Adding rendering on ./renderer.zig
 const TextRenderer = @import("renderer.zig").TextRenderer;
 
+// Building thw windows GUI
 pub const Window = struct {
     window: *c.SDL_Window,
     renderer: *c.SDL_Renderer,
